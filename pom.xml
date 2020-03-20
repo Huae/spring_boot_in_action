@@ -10,6 +10,7 @@
     <modules>
         <module>ch1_aop_test</module>
         <module>ch2_normal_config</module>
+        <module>ch3_advanced_topic</module>
     </modules>
     <name>spring_boot_in_action</name>
     <description>Demo project for Spring Boot</description>
@@ -41,6 +42,12 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
             <version>1.8.5</version>
+        </dependency>
+        <!-- 使用commons包进行IO操作 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.3</version>
         </dependency>
     </dependencies>
 
