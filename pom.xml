@@ -11,6 +11,7 @@
         <module>ch1_aop_test</module>
         <module>ch2_normal_config</module>
         <module>ch3_advanced_topic</module>
+        <module>ch4_springmvc</module>
     </modules>
     <name>spring_boot_in_action</name>
     <description>Demo project for Spring Boot</description>
