@@ -3,12 +3,11 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
-    <title>springmvc</title>
-    <script type="text/css" src="/assets/test.js"></script>
+    <title>error</title>
 </head>
 <body>
 <pre>
-    Welcome to SpringMVC world
+    ${errorMessage}
 </pre>
 </body>
 </html>

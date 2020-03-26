@@ -3,12 +3,12 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
-    <title>springmvc</title>
-    <script type="text/css" src="/assets/test.js"></script>
+    <title>upload</title>
 </head>
 <body>
-<pre>
-    Welcome to SpringMVC world
-</pre>
+<form action="upload" enctype="multipart/form-data" method="post">
+    <input type="file" name="file"></br>
+    <input type="submit" value="上传">
+</form>
 </body>
 </html>
