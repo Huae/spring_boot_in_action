@@ -26,6 +26,6 @@ public class ExcceptionHanlderAdvice {
 
     @InitBinder     // WebDataBinder用来自动绑定前台的请求参数
     public void initBinder(WebDataBinder webDataBinder) {
-        webDataBinder.setDisallowedFields("id");    // 过滤request请求中的id参数
+        webDataBinder.setDisallowedFields("ids");    // 过滤request请求中的ids参数
     }
 }

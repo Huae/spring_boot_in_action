@@ -19,14 +19,13 @@ public class WebInitializer implements WebApplicationInitializer {
         // 初始化WebApplicationContext 注册配置类并将其和当前ServletContext关联
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(SpringMVCconfig.class);
-//        ctx.refresh();
-        ctx.setServletContext(servletContext);
 
         // 配置springmvc核心Servlet(请求拦截分发)
         ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(ctx));
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
         servlet.setAsyncSupported(true);    // 开启异步方法支持
+        ctx.setServletContext(servletContext);
     }
 
 

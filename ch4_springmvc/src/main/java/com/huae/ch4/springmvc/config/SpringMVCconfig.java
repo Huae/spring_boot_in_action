@@ -17,7 +17,7 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 @EnableScheduling // 开启计划任务支持
-@ComponentScan("com.huae.ch4.springmvc")
+@ComponentScan("com.huae.ch4.springmvc.*")
 public class SpringMVCconfig extends WebMvcConfigurerAdapter {  // 继承WebMvcConfigurerAdapter重写方法自定义MVC配置
 
     // 配置视图解析器
